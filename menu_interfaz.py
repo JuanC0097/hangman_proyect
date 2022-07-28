@@ -51,7 +51,7 @@ def clear():
     os.system("clear")   
 
 def main():
-    pass
+    categories_ch()
 
 if __name__ == '__main__':
     main()
