@@ -26,7 +26,7 @@ Jaguar
 Vaca
 Varano
 Venado
-Vicuña
+Vino
 Tábano
 Tejón
 Tenia
@@ -37,7 +37,7 @@ Tijereta
 Asno
 Atún
 Avefría
-Avestru
+Avestruz
 Teléfono
 Televisor
 Portátiles
@@ -80,7 +80,7 @@ mecánica
 microchip
 Violín
 Berimbáu
-laúd árabe
+laúd
 kamanché
 lira
 Flauta
@@ -108,12 +108,12 @@ buk
 bulbul
 guqin
 gumbri
-güira
-güiro
+guira
+guiro
 laúd
 matófono
 matraca
-mbira
+birra
 mejorana
 metalófono
 ocarina

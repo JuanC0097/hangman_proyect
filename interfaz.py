@@ -69,7 +69,7 @@ dict_ascii= {
              #                                                                                      #
              #               1.Las palabras tendran una longitud de 4 a 5 caracteres                #
              #                                                                                      #
-             #               2.Ninguna palabra esta construida con el metodo upper                  #
+             #               2.Todas las palabras esta construida con el metodo upper               #
              #                                                                                      #
              #               3.Ninguna palabra tiene caracteres especiales                          #
              #                                                                                      #
@@ -217,26 +217,6 @@ dict_ascii= {
              ##############                                                            ##############
              ########################################################################################
              ''']}
-
-def chosen_category(categoria):
-    print("Las Categorias son:"+"\n1.FACIL\n2.NORMAL\n3.DIFICIL")
-    categoria = int(input("Por favor elija la categoria: "))
-    if categoria == 1:
-        print("Ha seleccionado la categoria FACIL")
-        categoria == int(categoria)
-        print(categoria)
-    elif categoria == 2:
-        print("Ha seleccionado la categoria NORMAL")
-        categoria == int(categoria)
-        print(categoria)
-    elif categoria == 3:
-        print("Ha seleccionado la categoria DIFICIL")
-        categoria == int(categoria)
-        print(categoria)
-    else:
-        print("No ha seleccionado una categoria")
-
-
 
 if __name__ == '__main__':
     pass
