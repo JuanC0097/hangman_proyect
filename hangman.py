@@ -1,39 +1,33 @@
 import os
 import menu_interfaz
 import random
-#leer archivo,guardarlo en f
-#guardar f en una lista
+#'''leer archivo,guardarlo en una lista|funcion: with(Abrir y Cerrar archivos)
+#Metodos: replace(eliminar salto de linea) append(nueva lista sin salto de linea)
+# '''
 def read():
     with open ("./word.txt","r", encoding="utf=8") as f:
-            list_word = [line for line in f] 
-            #reemplazar caracter de la lista
-            #agregarlo a nueva lista
+            list_word = [line for line in f]
             words = []
+
             for i in list_word:
                 result = i.replace('\n','')              
                 words.append(result)
     return(words)
-    #print(random.choice(words))   
 
-vocales = {
-    'á':'a',
-    'é':'e',
-    'í':'i',
-    'ó':'o',
-    'ú':'u',    
-}
+#Limpiar acentos| metodos: maketrans y translate.
+def clearvocal():
+    words = str(read())
+    new_words = words.maketrans('áéíóú', 'aeiou')
+    nwords = words.translate(new_words)
+    return(nwords)
 
-def change_voca():
-    list_word = str(read())
-    list_word.join(vocales.get(c, c) for c in list_word)
-    return list_word
-
+#'''Funcion principal
+#   1. Limpiar consola: funcion importada del archivo menu_interfaz
+#   2. Arte ascci: nombre del programa y categorias existentes
+#   3. estructura de control if/else: escoguer la categoria'''
 def run():
-    #limpia consola
     menu_interfaz.clear()
-    #art-ascii "inicio"
     menu_interfaz.interfaz_inicio()
-    #categorias con las que contamos
     menu_interfaz.categories_ch()
     
     chosen = int(input("Por favor Ingrese la categoria a la cual desea ingresar: "))
@@ -46,9 +40,9 @@ def run():
             if chosen == 3:
                 menu_interfaz.cate_medio()
             else:
-                print("Por favor Ingrese una categorita valida") 
+                print("Por favor Ingrese una categoria valida") 
     
-    change_voca()  
+    print(clearvocal())
 
 if __name__ == '__main__':
     run()
